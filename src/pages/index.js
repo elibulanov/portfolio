@@ -21,7 +21,7 @@ const links = [
   },
   {
     text: "IVMET",
-    url: "https://github.com/elibulanov/IVMETstore",
+    url: "https://ivmet.com",
     description:
       "A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client. The goal as to create a site that was fast, optimized and mobile responsive.",
   },
@@ -49,15 +49,15 @@ const IndexPage = () => (
     <Seo title="Home" />
     <div className={styles.heroSection}>
       <div className={styles.heroText}>
-       <h1>
-       <b> Welcome to my portfolio!</b>
-      </h1>
-      <h3>
-        My name is Eli and 
-        I'm a self-taught Web Developer based in Vancouver, WA.
-        I work with frontend frameworks such as React, React-Native, NextJS and Gatsby.
-      </h3>
-      {/* <Link
+        <h1>
+          <b> Welcome to my portfolio!</b>
+        </h1>
+        <h3>
+          My name is Eli and
+          I'm a self-taught Web Developer based in Vancouver, WA.
+          I work with frontend frameworks such as React, React-Native, NextJS and Gatsby.
+        </h3>
+        {/* <Link
       to="about"
       style={{
         fontSize: `var(--font-sm)`,
@@ -67,7 +67,7 @@ const IndexPage = () => (
       About Me
     </Link> */}
       </div>
-     
+
       <StaticImage
         src="../images/portrait.jpg"
         loading="eager"
@@ -79,27 +79,29 @@ const IndexPage = () => (
       />
     </div>
 
+
     <div className={styles.textCenter}>
+      
       <p className={styles.intro}>
-       <h2>Projects</h2>
-       <StaticImage
-        src="../images/phone.png"
-        loading="eager"
-        width={30}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <StaticImage
-        src="../images/laptop.png"
-        loading="eager"
-        width={80}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
+        <h2>Projects</h2>
+        <StaticImage
+          src="../images/phone.png"
+          loading="eager"
+          width={30}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+        <StaticImage
+          src="../images/laptop.png"
+          loading="eager"
+          width={80}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
       </p>
     </div>
 
@@ -110,7 +112,7 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href={`${link.url}`}
           >
-            {link.text} 
+            {link.text}
           </a>
           <p className={styles.listItemDescription}>{link.description}</p>
         </li>
