@@ -40,7 +40,7 @@ const moreLinks = [
   },
   {
     text: "LinkedIn",
-    url: "page-2",
+    url: "https://www.linkedin.com/in/eli-bulanov-1b566a226/",
   }
 ]
 
