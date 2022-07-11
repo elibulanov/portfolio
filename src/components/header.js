@@ -1,6 +1,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -14,7 +14,10 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <Link
-      to="/"
+      to='/'
+      spy={true}
+      smooth={true}
+      duration={600}
       style={{
         fontSize: `var(--font-sm)`,
         textDecoration: `none`,
@@ -22,7 +25,10 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
-   
+    <Link to="projects" spy={true} smooth={true} offset={150} duration={700}>
+          Test 1
+    </Link>
+        
   </header>
 )
 

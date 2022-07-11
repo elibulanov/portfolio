@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -10,6 +10,7 @@ const links = [
   {
     text: "Blade Mobile App",
     url: "https://github.com/elibulanov/blade",
+    image: "../images/phone.png",
     description:
       "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. ",
   },
@@ -24,12 +25,6 @@ const links = [
     url: "https://ivmet.com",
     description:
       "A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client. The goal as to create a site that was fast, optimized and mobile responsive.",
-  },
-  {
-    text: "React Calendar",
-    url: "https://github.com/elibulanov/reactCalendar",
-    description:
-      "A simple React calendar app using hooks and state.",
   }
 ]
 
@@ -44,44 +39,61 @@ const moreLinks = [
   }
 ]
 
+
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className={styles.heroSection}>
       <div className={styles.heroText}>
         <h1>
-          <b> Welcome to my portfolio!</b>
+          <b>Hey, i'm Eli.</b>
         </h1>
         <h3>
-          My name is Eli and
           I'm a self-taught Web Developer based in Vancouver, WA.
           I work with frontend frameworks such as React, React-Native, NextJS and Gatsby.
         </h3>
-        {/* <Link
-      to="about"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      About Me
-    </Link> */}
       </div>
 
       <StaticImage
-        src="../images/portrait.jpg"
+        src="../images/portrait.png"
         loading="eager"
-        width={300}
-        quality={95}
+        width={400}
+        quality={100}
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
       />
     </div>
 
+    {/* about section */}
 
-    <div className={styles.textCenter}>
-      
+    <div className={styles.textCenter} id="about">
+
+      <p className={styles.intro}>
+        <h2>About</h2>
+        <StaticImage
+          src="../images/blades.png"
+          loading="eager"
+          width={100}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Aspernatur temporibus impedit, optio aliquid esse quas odit!
+        Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
+      </p>
+    </div>
+
+    {/* project section */}
+
+    <div className={styles.textCenter} id="projects">
+
       <p className={styles.intro}>
         <h2>Projects</h2>
         <StaticImage
@@ -105,19 +117,46 @@ const IndexPage = () => (
       </p>
     </div>
 
+
+
     <ul className={styles.list}>
       {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}`}
-          >
-            {link.text}
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
+        <>
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}`}
+            >
+              {link.text}
+            </a>
+            <p className={styles.listItemDescription}>
+              {link.description}
+            </p>
+          </li>
+
+          <div className={styles.images}>
+            <div className={styles.listImage}>
+             
+                  
+                  <StaticImage
+                    src="../images/laptop.png"
+                    loading="eager"
+                    width={400}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt=""
+                    style={{ marginBottom: `var(--space-3)` }}
+                  />
+                  
+                
+
+            </div>
+          </div>
+        </>))}
     </ul>
+
+    {/* footer */}
+
     {moreLinks.map((link, i) => (
       <React.Fragment key={link.url}>
         <a href={`${link.url}`}>{link.text}</a>
