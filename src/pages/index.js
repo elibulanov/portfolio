@@ -1,7 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-
+import webappGIF from "../images/webapp.gif"
+import mobileGIF from "../images/mobileGif.gif"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -120,39 +121,46 @@ const IndexPage = () => (
 
 
     <ul className={styles.list}>
-      {links.map(link => (
-        <>
-          <li key={link.url} className={styles.listItem}>
-            <a
-              className={styles.listItemLink}
-              href={`${link.url}`}
-            >
-              {link.text}
-            </a>
-            <p className={styles.listItemDescription}>
-              {link.description}
-            </p>
-          </li>
+      <div className={styles.column1}>
+        {links.map(link => (
+          <>
+            <li key={link.url} className={styles.listItem}>
+              <a
+                className={styles.listItemLink}
+                href={`${link.url}`}
+              >
+                {link.text}
+              </a>
+              <p className={styles.listItemDescription}>
+                {link.description}
+              </p>
+            </li>
+          </>))}
+      </div>
 
-          <div className={styles.images}>
-            <div className={styles.listImage}>
-             
-                  
-                  <StaticImage
-                    src="../images/laptop.png"
-                    loading="eager"
-                    width={400}
-                    quality={95}
-                    formats={["auto", "webp", "avif"]}
-                    alt=""
-                    style={{ marginBottom: `var(--space-3)` }}
-                  />
-                  
-                
+      <div className={styles.images}>
 
-            </div>
-          </div>
-        </>))}
+      <div className={styles.image1}>
+          <img src={mobileGIF} width={200}/>
+        </div>
+        <div className={styles.image2}>
+          <img src={webappGIF} width={800} />
+        </div>
+
+        <StaticImage
+          src="../images/laptop.png"
+          loading="eager"
+          width={500}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+
+
+
+      </div>
+
     </ul>
 
     {/* footer */}
