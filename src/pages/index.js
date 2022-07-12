@@ -11,13 +11,14 @@ const links = [
   {
     text: "Blade Mobile App",
     url: "https://github.com/elibulanov/blade",
-    image: "../images/phone.png",
+    image: mobileGIF,
     description:
       "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. ",
   },
   {
     text: "Blade Web App",
     url: "https://github.com/elibulanov/blade_webapp",
+    image: webappGIF,
     description:
       "This is a NodeJS web app I have built that is like the mobile version, sharing the same database as the mobile app and renders those skateparks on a map. User authentication aswell as the ability to leave reviews at skateparks.",
   },
@@ -121,46 +122,40 @@ const IndexPage = () => (
 
 
     <ul className={styles.list}>
-      <div className={styles.column1}>
-        {links.map(link => (
-          <>
-            <li key={link.url} className={styles.listItem}>
+      
+          <li className={styles.listItem}>
+            <div className={styles.projectText}>
               <a
                 className={styles.listItemLink}
-                href={`${link.url}`}
+                href="https://github.com/elibulanov/blade"
               >
-                {link.text}
+                Blade Mobile
               </a>
               <p className={styles.listItemDescription}>
-                {link.description}
+              Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it.
               </p>
-            </li>
-          </>))}
-      </div>
-
-      <div className={styles.images}>
-
-      <div className={styles.image1}>
-          <img src={mobileGIF} width={200}/>
-        </div>
-        <div className={styles.image2}>
-          <img src={webappGIF} width={800} />
-        </div>
-
-        <StaticImage
-          src="../images/laptop.png"
-          loading="eager"
-          width={500}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          style={{ marginBottom: `var(--space-3)` }}
-        />
-
-
-
-      </div>
-
+            </div>
+            <div className={styles.image1}>
+              <img src={mobileGIF} width={300} />
+            </div>
+           </li>
+          <li className={styles.listItem}>
+            <div className={styles.projectText}>
+              <a
+                className={styles.listItemLink}
+                href="https://github.com/elibulanov/blade"
+              >
+                Blade Mobile
+              </a>
+              <p className={styles.listItemDescription}>
+              "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
+              </p>
+            </div>
+            <div className={styles.image2}>
+              <img src={webappGIF} width={1000} />
+            </div>
+            
+          </li>
     </ul>
 
     {/* footer */}
