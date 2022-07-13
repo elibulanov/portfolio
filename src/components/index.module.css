@@ -1,7 +1,10 @@
 .list {
   padding-top: 10%;
   display: flexbox;
-  max-width: 850%;
+  max-width: none;
+  width: 85rem;
+  left: -15rem;
+  position: relative;
 }
 
 .column1 {
@@ -12,9 +15,9 @@
 
 .container {
   text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
 }
 
 .listItem {
@@ -24,11 +27,18 @@
   padding-bottom: 10rem;
 }
 
+.listItem:nth-child(1) {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding-right: 10rem;
+}
+
 .image1 {
   margin: 0 auto;
 }
 
-.image2{
+.image2 {
   max-width: fit-content;
 }
 
@@ -71,8 +81,19 @@
   color: var(--color-text);
   margin-bottom: 0;
   margin-top: var(--space-1);
-
+  
 }
+
+
+
+.listItemDescription {
+  padding-right: 0rem;
+}
+
+.listItemDescription:nth-child(3) {
+  padding-right: 3rem;
+}
+
 
 .heroSection {
   display: flex;
@@ -89,27 +110,28 @@
   max-width: 350px;
 }
 
-@media screen and ( max-width: 800px) {
+@media screen and (max-width: 800px) {
   .heroSection {
     flex-direction: column-reverse;
     gap: .5rem;
   }
 }
 
-@media screen and ( max-width: 800px) {
+@media screen and (max-width: 800px) {
   .list {
     flex-direction: column;
     width: 100%;
   }
+
   .listItem {
     margin: 0;
-   width: 100%;
-   padding-right: 0rem;
-   padding-bottom: 2rem;
+    width: 100%;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
   }
-  
+
   .list {
-    display: flexbox;
+    display: flex;
     max-width: 150%;
     flex-direction: column;
   }
@@ -120,7 +142,7 @@
     flex-direction: column;
     padding-bottom: 10rem;
   }
-  
+
   .images {
     width: 100%;
     padding-bottom: 2rem;

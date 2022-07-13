@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import webappGIF from "../images/webapp.gif"
 import mobileGIF from "../images/mobileGif.gif"
+import ivmet from "../images/ivmet.png"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
@@ -153,6 +154,23 @@ const IndexPage = () => (
             </div>
             <div className={styles.image2}>
               <img src={webappGIF} width={1000} />
+            </div>
+            
+          </li>
+          <li className={styles.listItem}>
+            <div className={styles.projectText}>
+              <a
+                className={styles.listItemLink}
+                href="https://github.com/elibulanov/blade"
+              >
+                Blade Mobile
+              </a>
+              <p className={styles.listItemDescription}>
+              "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
+              </p>
+            </div>
+            <div className={styles.image2}>
+              <img src={ivmet} width={1000} />
             </div>
             
           </li>
