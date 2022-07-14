@@ -81,7 +81,7 @@
   color: var(--color-text);
   margin-bottom: 0;
   margin-top: var(--space-1);
-  
+
 }
 
 
@@ -110,46 +110,6 @@
   max-width: 350px;
 }
 
-@media screen and (max-width: 800px) {
-  .heroSection {
-    flex-direction: column-reverse;
-    gap: .5rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .list {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .listItem {
-    margin: 0;
-    width: 100%;
-    padding-right: 0rem;
-    padding-bottom: 2rem;
-  }
-
-  .list {
-    display: flex;
-    max-width: 150%;
-    flex-direction: column;
-  }
-
-  .listItem {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10rem;
-  }
-
-  .images {
-    width: 100%;
-    padding-bottom: 2rem;
-  }
-}
-
-
 
 .textCenter {
   padding-top: 10rem;
@@ -159,4 +119,59 @@
 .intro {
   max-width: none;
   line-height: var(--line-height-loose);
+}
+
+@media screen and (max-width: 800px) {
+  .heroSection {
+    flex-direction: column-reverse;
+    gap: .5rem;
+  }
+
+  .list {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    max-width: 150%;
+    flex-direction: column;
+    left: -1.5rem;
+  }
+
+  .listItem {
+    margin: 0;
+    width: 100%;
+    padding-right: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .listItemDescription {
+    padding-bottom: 3rem;
+  }
+
+  .listItem:nth-child(1) {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0rem;
+  }
+
+  .projectText {
+    max-width: 100%;
+    padding-right: 0%;
+  }
+
+  .image1 {
+    max-width: fit-content;
+  }
+
+  .listItem {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .images {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
 }
