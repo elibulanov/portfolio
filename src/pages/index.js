@@ -71,9 +71,8 @@ const IndexPage = () => (
 
     {/* about section */}
 
-    <div className={styles.textCenter} id="about">
-
-      <p className={styles.intro}>
+    <div className={styles.aboutText} id="about">
+      <div className={styles.intro}>
         <h2>About</h2>
         <StaticImage
           src="../images/blades.png"
@@ -85,12 +84,56 @@ const IndexPage = () => (
           style={{ marginBottom: `var(--space-3)` }}
         />
 
-      </p>
+      </div>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Aspernatur temporibus impedit, optio aliquid esse quas odit!
         Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
       </p>
+
+      <div className={styles.aboutContent1}>
+        <StaticImage
+          src="../images/truck.jpg"
+          loading="eager"
+          width={300}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur temporibus impedit, optio aliquid esse quas odit!
+          Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
+        </p>
+
+      </div>
+      <div className={styles.aboutContent2}>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur temporibus impedit, optio aliquid esse quas odit!
+          Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
+        </p>
+        <StaticImage
+          src="../images/skiing.jpg"
+          loading="eager"
+          width={300}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+        <StaticImage
+          src="../images/blading.jpg"
+          loading="eager"
+          width={300}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+
+      </div>
     </div>
 
     {/* project section */}
@@ -123,57 +166,57 @@ const IndexPage = () => (
 
 
     <ul className={styles.list}>
-      
-          <li className={styles.listItem}>
-            <div className={styles.projectText}>
-              <a
-                className={styles.listItemLink}
-                href="https://github.com/elibulanov/blade"
-              >
-                Blade Mobile
-              </a>
-              <p className={styles.listItemDescription}>
-              Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it.
-              </p>
-            </div>
-            <div className={styles.image1}>
-              <img src={mobileGIF} width={300} />
-            </div>
-           </li>
-          <li className={styles.listItem}>
-            <div className={styles.projectText}>
-              <a
-                className={styles.listItemLink}
-                href="https://github.com/elibulanov/blade"
-              >
-                Blade Mobile
-              </a>
-              <p className={styles.listItemDescription}>
-              "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
-              </p>
-            </div>
-            <div className={styles.image2}>
-              <img src={webappGIF} width={1000} />
-            </div>
-            
-          </li>
-          <li className={styles.listItem}>
-            <div className={styles.projectText}>
-              <a
-                className={styles.listItemLink}
-                href="https://github.com/elibulanov/blade"
-              >
-                Blade Mobile
-              </a>
-              <p className={styles.listItemDescription}>
-              "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
-              </p>
-            </div>
-            <div className={styles.image2}>
-              <img src={ivmet} width={1000} />
-            </div>
-            
-          </li>
+
+      <li className={styles.listItem}>
+        <div className={styles.projectText}>
+          <a
+            className={styles.listItemLink}
+            href="https://github.com/elibulanov/blade"
+          >
+            Blade Mobile
+          </a>
+          <p className={styles.listItemDescription}>
+            Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it.
+          </p>
+        </div>
+        <div className={styles.image1}>
+          <img src={mobileGIF} width={300} />
+        </div>
+      </li>
+      <li className={styles.listItem}>
+        <div className={styles.projectText}>
+          <a
+            className={styles.listItemLink}
+            href="https://github.com/elibulanov/blade"
+          >
+            Blade Mobile
+          </a>
+          <p className={styles.listItemDescription}>
+            "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
+          </p>
+        </div>
+        <div className={styles.image2}>
+          <img src={webappGIF} width={1000} />
+        </div>
+
+      </li>
+      <li className={styles.listItem}>
+        <div className={styles.projectText}>
+          <a
+            className={styles.listItemLink}
+            href="https://github.com/elibulanov/blade"
+          >
+            Blade Mobile
+          </a>
+          <p className={styles.listItemDescription}>
+            "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
+          </p>
+        </div>
+        <div className={styles.image2}>
+          <img src={ivmet} width={1000} />
+        </div>
+
+      </li>
     </ul>
 
     {/* footer */}

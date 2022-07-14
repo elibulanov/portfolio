@@ -110,10 +110,46 @@
   max-width: 350px;
 }
 
+.aboutText p {
+  max-width: none;
+}
 
 .textCenter {
   padding-top: 10rem;
   text-align: center;
+}
+
+.aboutText {
+  padding-top: 10rem;
+  text-align: center;
+}
+
+.aboutContent1 {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutContent1 p{
+  padding-top: 7rem;
+  max-width: 23rem;
+  text-align: start;
+}
+
+.aboutContent2 {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutContent2 p{
+  padding-top: 7rem;
+  max-width: 23rem;
+  text-align: start;
 }
 
 .intro {
@@ -125,6 +161,16 @@
   .heroSection {
     flex-direction: column-reverse;
     gap: .5rem;
+  }
+
+  .aboutContent1 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .aboutContent2{
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .list {
