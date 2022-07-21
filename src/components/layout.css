@@ -51,14 +51,15 @@ a {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 2px;
+  text-decoration: none;
+  
 }
 a:active,
 a:hover {
   outline-width: 0;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);

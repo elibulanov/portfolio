@@ -25,9 +25,24 @@ const Header = ({ siteTitle }) => (
     >
       {siteTitle}
     </Link>
+    <div style={{
+      margin: `0px`,
+      padding: `var(--space-4) var(--size-gutter)`,
+      display: `flex`,
+      justifyContent: `space-evenly`,
+      
+    }}>
     <Link to="projects" spy={true} smooth={true} offset={150} duration={700}>
-          Test 1
+          About
     </Link>
+    <Link to="projects" spy={true} smooth={true} offset={150} duration={700}>
+          Projects
+    </Link>
+    <Link to="/contact" spy={true} smooth={true} offset={150} duration={700}>
+          Contact
+    </Link>
+    </div>
+    
         
   </header>
 )

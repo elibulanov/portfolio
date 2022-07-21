@@ -93,9 +93,9 @@ const IndexPage = () => (
 
       <div className={styles.aboutContent1}>
         <StaticImage
-          src="../images/truck.jpg"
+          src="../images/truckin.jpg"
           loading="eager"
-          width={300}
+          width={400}
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt=""
@@ -114,24 +114,18 @@ const IndexPage = () => (
           Aspernatur temporibus impedit, optio aliquid esse quas odit!
           Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
         </p>
-        <StaticImage
-          src="../images/skiing.jpg"
-          loading="eager"
-          width={300}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          style={{ marginBottom: `var(--space-3)` }}
-        />
-        <StaticImage
-          src="../images/blading.jpg"
-          loading="eager"
-          width={300}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          style={{ marginBottom: `var(--space-3)` }}
-        />
+        <div className={styles.aboutPics}>
+          <StaticImage
+            src="../images/collage.png"
+            loading="eager"
+            width={700}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            style={{ marginBottom: `var(--space-3)` }}
+          />
+        </div>
+
 
       </div>
     </div>
@@ -176,7 +170,10 @@ const IndexPage = () => (
             Blade Mobile
           </a>
           <p className={styles.listItemDescription}>
-            Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it.
+            <li>Mobile app that renders interactive skatepark data on a map.</li>
+            <li>React-Native navigation, expo and android studio.</li>
+            <li>User authentication with a database.</li>
+            <li>Learned about state/props as well as redux.</li>
           </p>
         </div>
         <div className={styles.image1}>
@@ -192,7 +189,9 @@ const IndexPage = () => (
             Blade Mobile
           </a>
           <p className={styles.listItemDescription}>
-            "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
+          <li>NodeJS project using MVC architecture and RESTful routing. </li>
+            <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
+            <li>I learned express js to build a back-end for CRUD operations.</li>
           </p>
         </div>
         <div className={styles.image2}>
@@ -206,10 +205,12 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href="https://github.com/elibulanov/blade"
           >
-            Blade Mobile
+            Blade Web App
           </a>
           <p className={styles.listItemDescription}>
-            "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. "
+            <li>A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client.
+               The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
+            
           </p>
         </div>
         <div className={styles.image2}>
