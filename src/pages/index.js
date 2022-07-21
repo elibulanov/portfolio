@@ -189,7 +189,7 @@ const IndexPage = () => (
             Blade Mobile
           </a>
           <p className={styles.listItemDescription}>
-          <li>NodeJS project using MVC architecture and RESTful routing. </li>
+            <li>NodeJS project using MVC architecture and RESTful routing. </li>
             <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
             <li>I learned express js to build a back-end for CRUD operations.</li>
           </p>
@@ -205,12 +205,11 @@ const IndexPage = () => (
             className={styles.listItemLink}
             href="https://github.com/elibulanov/blade"
           >
-            Blade Web App
+            IVMET Home and Office Goods
           </a>
           <p className={styles.listItemDescription}>
             <li>A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client.
-               The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
-            
+              The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
           </p>
         </div>
         <div className={styles.image2}>
@@ -219,6 +218,37 @@ const IndexPage = () => (
 
       </li>
     </ul>
+
+    {/* contact form */}
+
+
+    <div className={styles.contactSection} id="contact">
+      <div>
+        <h2>Get In Touch</h2>
+        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input name="name" placeholder="Your Name" class="name" required />
+          <input name="emailaddress" placeholder="Email" class="email" type="email" required />
+          <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
+          <input name="submit" class="btn" type="submit" value="Send" />
+        </form>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     {/* footer */}
 

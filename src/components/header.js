@@ -2,6 +2,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "react-scroll"
 
+
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -32,13 +34,11 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-evenly`,
       
     }}>
-    <Link to="projects" spy={true} smooth={true} offset={150} duration={700}>
-          About
-    </Link>
+    
     <Link to="projects" spy={true} smooth={true} offset={150} duration={700}>
           Projects
     </Link>
-    <Link to="/contact" spy={true} smooth={true} offset={150} duration={700}>
+    <Link to="contact" spy={true} smooth={true} offset={150} duration={700}>
           Contact
     </Link>
     </div>
