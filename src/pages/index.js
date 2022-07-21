@@ -194,7 +194,7 @@ const IndexPage = () => (
             <li>I learned express js to build a back-end for CRUD operations.</li>
           </p>
         </div>
-        <div className={styles.image2}>
+        <div >
           <img src={webappGIF} width={1000} />
         </div>
 
@@ -212,7 +212,7 @@ const IndexPage = () => (
               The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
           </p>
         </div>
-        <div className={styles.image2}>
+        <div>
           <img src={ivmet} width={1000} />
         </div>
 
