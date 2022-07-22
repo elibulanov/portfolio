@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
-import webappGIF from "../images/webapp.gif"
+import webapp from "../images/webapp.webm"
 import mobileGIF from "../images/mobileGif.gif"
 import ivmet from "../images/ivmet.png"
 import Layout from "../components/layout"
@@ -104,7 +104,7 @@ const IndexPage = () => (
             style={{ marginBottom: `var(--space-3)` }}
           />
         </div>
-        </div>
+      </div>
     </div>
 
     {/* project section */}
@@ -169,7 +169,10 @@ const IndexPage = () => (
             </p>
           </div>
           <div >
-            <img src={webappGIF} width={1000} alt="webapp" />
+            <video autoPlay loop width={850}>
+              <source src={webapp} type="video/mp4" />
+            </video>
+
           </div>
 
         </li>
@@ -200,7 +203,7 @@ const IndexPage = () => (
 
         </li>
       </ul>
-      
+
       <div className={styles.contactSection} id="contact">
         <div className={styles.test}>
           <h2>Get In Touch</h2>
@@ -213,7 +216,7 @@ const IndexPage = () => (
 
         </div>
       </div>
-      
+
       {moreLinks.map((link, i) => (
         <React.Fragment key={link.url}>
           <a href={`${link.url}`}>{link.text}</a>
