@@ -104,15 +104,12 @@ const IndexPage = () => (
             style={{ marginBottom: `var(--space-3)` }}
           />
         </div>
-
-
-      </div>
+        </div>
     </div>
 
     {/* project section */}
 
     <div className={styles.textCenter} id="projects">
-
       <p className={styles.intro}>
         <h2>Projects</h2>
         <StaticImage
@@ -136,11 +133,8 @@ const IndexPage = () => (
       </p>
     </div>
 
-
-
     <div>
       <ul className={styles.list}>
-
         <li className={styles.listItem}>
           <div className={styles.projectText}>
             <a
@@ -206,8 +200,7 @@ const IndexPage = () => (
 
         </li>
       </ul>
-
-
+      
       <div className={styles.contactSection} id="contact">
         <div className={styles.test}>
           <h2>Get In Touch</h2>
@@ -220,15 +213,14 @@ const IndexPage = () => (
 
         </div>
       </div>
-
-
-
+      
       {moreLinks.map((link, i) => (
         <React.Fragment key={link.url}>
           <a href={`${link.url}`}>{link.text}</a>
           {i !== moreLinks.length - 1 && <> · </>}
         </React.Fragment>
       ))}
+
     </div>
   </Layout>
 )
