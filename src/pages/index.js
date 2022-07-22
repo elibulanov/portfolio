@@ -1,6 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+
+import { StaticImage } from "gatsby-plugin-image"
 import webappGIF from "../images/webapp.gif"
 import mobileGIF from "../images/mobileGif.gif"
 import ivmet from "../images/ivmet.png"
@@ -8,28 +8,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 
-const links = [
-  {
-    text: "Blade Mobile App",
-    url: "https://github.com/elibulanov/blade",
-    image: mobileGIF,
-    description:
-      "Blade is a mobile app built for rollerbladers. The idea of this app is to find skatepark and street spots near you. This app is a joy to work on and I have learned a ton working on it. I want to create a better version as I continue to grow as a developer. ",
-  },
-  {
-    text: "Blade Web App",
-    url: "https://github.com/elibulanov/blade_webapp",
-    image: webappGIF,
-    description:
-      "This is a NodeJS web app I have built that is like the mobile version, sharing the same database as the mobile app and renders those skateparks on a map. User authentication aswell as the ability to leave reviews at skateparks.",
-  },
-  {
-    text: "IVMET",
-    url: "https://ivmet.com",
-    description:
-      "A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client. The goal as to create a site that was fast, optimized and mobile responsive.",
-  }
-]
+
 
 const moreLinks = [
   {
@@ -114,7 +93,7 @@ const IndexPage = () => (
           Aspernatur temporibus impedit, optio aliquid esse quas odit!
           Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
         </p>
-        <div className={styles.aboutPics}>
+        <div>
           <StaticImage
             src="../images/collage.png"
             loading="eager"
@@ -159,105 +138,98 @@ const IndexPage = () => (
 
 
 
-    <ul className={styles.list}>
+    <div>
+      <ul className={styles.list}>
 
-      <li className={styles.listItem}>
-        <div className={styles.projectText}>
-          <a
-            className={styles.listItemLink}
-            href="https://github.com/elibulanov/blade"
-          >
-            Blade Mobile
-          </a>
-          <p className={styles.listItemDescription}>
-            <li>Mobile app that renders interactive skatepark data on a map.</li>
-            <li>React-Native navigation, expo and android studio.</li>
-            <li>User authentication with a database.</li>
-            <li>Learned about state/props as well as redux.</li>
-          </p>
+        <li className={styles.listItem}>
+          <div className={styles.projectText}>
+            <a
+              className={styles.listItemLink}
+              href="https://github.com/elibulanov/blade"
+            >
+              Blade Mobile
+            </a>
+            <p className={styles.listItemDescription}>
+              <li>Mobile app that renders interactive skatepark data on a map.</li>
+              <li>React-Native navigation, expo and android studio.</li>
+              <li>User authentication with a database.</li>
+              <li>Learned about state/props as well as redux.</li>
+            </p>
+          </div>
+          <div className={styles.image1}>
+            <img src={mobileGIF} width={300} alt="mobile" />
+          </div>
+        </li>
+        <li className={styles.listItem}>
+          <div className={styles.projectText}>
+            <a
+              className={styles.listItemLink}
+              href="https://github.com/elibulanov/blade"
+            >
+              Blade Mobile
+            </a>
+            <p className={styles.listItemDescription}>
+              <li>NodeJS project using MVC architecture and RESTful routing. </li>
+              <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
+              <li>I learned express js to build a back-end for CRUD operations.</li>
+            </p>
+          </div>
+          <div >
+            <img src={webappGIF} width={1000} alt="webapp" />
+          </div>
+
+        </li>
+        <li className={styles.listItem}>
+          <div className={styles.projectText}>
+            <a
+              className={styles.listItemLink}
+              href="https://github.com/elibulanov/blade"
+            >
+              IVMET Home and Office Goods
+            </a>
+            <p className={styles.listItemDescription}>
+              <li>A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client.
+                The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
+            </p>
+          </div>
+          <div className={styles.test}>
+            <StaticImage
+              src="../images/ivmet.png"
+              loading="eager"
+              width={1000}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt=""
+              style={{ marginBottom: `var(--space-3)` }}
+            />
+          </div>
+
+        </li>
+      </ul>
+
+
+      <div className={styles.contactSection} id="contact">
+        <div className={styles.test}>
+          <h2>Get In Touch</h2>
+          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input name="name" placeholder="Your Name" class="name" required />
+            <input name="emailaddress" placeholder="Email" class="email" type="email" required />
+            <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
+            <input name="submit" class="btn" type="submit" value="Send" />
+          </form>
+
         </div>
-        <div className={styles.image1}>
-          <img src={mobileGIF} width={300} />
-        </div>
-      </li>
-      <li className={styles.listItem}>
-        <div className={styles.projectText}>
-          <a
-            className={styles.listItemLink}
-            href="https://github.com/elibulanov/blade"
-          >
-            Blade Mobile
-          </a>
-          <p className={styles.listItemDescription}>
-            <li>NodeJS project using MVC architecture and RESTful routing. </li>
-            <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
-            <li>I learned express js to build a back-end for CRUD operations.</li>
-          </p>
-        </div>
-        <div >
-          <img src={webappGIF} width={1000} />
-        </div>
-
-      </li>
-      <li className={styles.listItem}>
-        <div className={styles.projectText}>
-          <a
-            className={styles.listItemLink}
-            href="https://github.com/elibulanov/blade"
-          >
-            IVMET Home and Office Goods
-          </a>
-          <p className={styles.listItemDescription}>
-            <li>A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client.
-              The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
-          </p>
-        </div>
-        <div>
-          <img src={ivmet} width={1000} />
-        </div>
-
-      </li>
-    </ul>
-
-    {/* contact form */}
-
-
-    <div className={styles.contactSection} id="contact">
-      <div>
-        <h2>Get In Touch</h2>
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input name="name" placeholder="Your Name" class="name" required />
-          <input name="emailaddress" placeholder="Email" class="email" type="email" required />
-          <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
-          <input name="submit" class="btn" type="submit" value="Send" />
-        </form>
-
       </div>
+
+
+
+      {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
+      ))}
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {/* footer */}
-
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
   </Layout>
 )
 
