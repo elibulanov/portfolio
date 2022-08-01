@@ -219,7 +219,7 @@ const IndexPage = () => (
         <div className={styles.test}>
           <h2>Contact</h2>
           <h1>elibulanov@gmail.com</h1>
-
+          <h5>resume avaliable upon request</h5>
         </div>
       </div>
 
