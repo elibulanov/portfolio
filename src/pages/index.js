@@ -36,16 +36,18 @@ const IndexPage = () => (
           I work with frontend frameworks such as React, React-Native, NextJS and Gatsby.
         </h3>
       </div>
+      <div className={styles.heroImg}>
+        <StaticImage
+          src="../images/portrait.png"
+          loading="eager"
+          width={400}
+          quality={100}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)` }}
+        />
+      </div>
 
-      <StaticImage
-        src="../images/portrait.png"
-        loading="eager"
-        width={400}
-        quality={100}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
     </div>
 
     {/* about section */}
@@ -71,16 +73,18 @@ const IndexPage = () => (
       </p>
 
       <div className={styles.aboutContent1}>
-
+        <div className={styles.aboutImg}>
         <StaticImage
           src="../images/truckin.jpg"
           loading="eager"
-          width={400}
+          width={800}
           quality={95}
           formats={["auto", "webp", "avif"]}
           alt=""
           style={{ marginBottom: `var(--space-3)` }}
         />
+        </div>
+        
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Aspernatur temporibus impedit, optio aliquid esse quas odit!
@@ -103,9 +107,9 @@ const IndexPage = () => (
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""
-              style={{ 
+              style={{
                 marginBottom: `var(--space-3)`
-               }}
+              }}
             />
           </div>
 
@@ -166,28 +170,6 @@ const IndexPage = () => (
               className={styles.listItemLink}
               href="https://github.com/elibulanov/blade"
             >
-              Blade Mobile
-            </a>
-            <p className={styles.listItemDescription}>
-              <li>NodeJS project using MVC architecture and RESTful routing. </li>
-              <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
-              <li>I learned express js to build a back-end for CRUD operations.</li>
-            </p>
-          </div>
-          <div >
-            <video autoPlay loop width={750} className={styles.video}>
-              <source src={webapp} type="video/mp4" />
-            </video>
-
-          </div>
-
-        </li>
-        <li className={styles.listItem}>
-          <div className={styles.projectText}>
-            <a
-              className={styles.listItemLink}
-              href="https://github.com/elibulanov/blade"
-            >
               IVMET Home and Office Goods
             </a>
             <p className={styles.listItemDescription}>
@@ -208,17 +190,35 @@ const IndexPage = () => (
           </div>
 
         </li>
+        <li className={styles.listItem}>
+          <div className={styles.projectText}>
+            <a
+              className={styles.listItemLink}
+              href="https://github.com/elibulanov/blade"
+            >
+              Blade Mobile
+            </a>
+            <p className={styles.listItemDescription}>
+              <li>NodeJS project using MVC architecture and RESTful routing. </li>
+              <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
+              <li>I learned express js to build a back-end for CRUD operations.</li>
+            </p>
+          </div>
+          <div >
+            <video autoPlay loop width={750} className={styles.video}>
+              <source src={webapp} type="video/mp4" />
+            </video>
+
+          </div>
+
+        </li>
+        
       </ul>
 
       <div className={styles.contactSection} id="contact">
         <div className={styles.test}>
-          <h2>Get In Touch</h2>
-          <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-            <input name="name" placeholder="Your Name" class="name" required />
-            <input name="emailaddress" placeholder="Email" class="email" type="email" required />
-            <textarea rows="4" cols="50" name="subject" placeholder="Please enter your message" class="message" required></textarea>
-            <input name="submit" class="btn" type="submit" value="Send" />
-          </form>
+          <h2>Contact</h2>
+          <h1>elibulanov@gmail.com</h1>
 
         </div>
       </div>

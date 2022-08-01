@@ -88,6 +88,9 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
   padding-left: 30px;
 }
 
+.aboutImg {
+  padding-right: 7rem;
+}
 
 
 .column1 {
@@ -200,17 +203,24 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
   margin-left: auto;
   margin-right: auto;
   max-width: 850px;
-  padding-top: 5rem;
   padding-bottom: 3rem;
+}
+
+.heroImg {
+  margin: 0 auto;
 }
 
 .heroText {
   font-size: large;
   max-width: 350px;
+  padding-top: 15px;
 }
 
 .aboutText p {
-  max-width: none;
+  max-width: 23rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  text-align: start;
 }
 
 .textCenter {
@@ -339,12 +349,27 @@ input {
   .heroSection {
     flex-direction: column-reverse;
     gap: .5rem;
+
   }
+
+  .heroText {
+    margin: 0 auto;
+  }
+
 
   .aboutContent1 {
     display: flex;
     flex-direction: column;
     padding-bottom: 5rem;
+
+  }
+
+  .aboutImg {
+    padding-right: 0rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    max-width: 114%;
+    margin: 0 auto;
   }
 
   .aboutContent2 {
@@ -360,9 +385,10 @@ input {
 
   .aboutContent1 p {
     padding-top: 7rem;
-    max-width: 100%;
+    max-width: 23rem;
     margin-left: 3%;
     margin-right: 3%;
+    margin: 0 auto;
   }
 
   .aboutContent2 p {
@@ -396,7 +422,11 @@ input {
     padding-left: 0rem;
   }
 
-
+  .image1 img {
+    width: 100%;
+    margin-left: -1rem;
+  }
+  
 
   .video {
     width: 108%;
@@ -408,7 +438,7 @@ input {
     width: 100%;
     display: flex;
     max-width: 150%;
-    flex-direction: column;
+    
     left: -1.5rem;
   }
 
