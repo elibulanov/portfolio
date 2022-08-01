@@ -71,6 +71,7 @@ const IndexPage = () => (
       </p>
 
       <div className={styles.aboutContent1}>
+
         <StaticImage
           src="../images/truckin.jpg"
           loading="eager"
@@ -94,15 +95,20 @@ const IndexPage = () => (
           Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
         </p>
         <div>
-          <StaticImage
-            src="../images/collage.png"
-            loading="eager"
-            width={700}
-            quality={95}
-            formats={["auto", "webp", "avif"]}
-            alt=""
-            style={{ marginBottom: `var(--space-3)` }}
-          />
+          <div className={styles.aboutContentImg2}>
+            <StaticImage
+              src="../images/collage.png"
+              loading="eager"
+              width={700}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt=""
+              style={{ 
+                marginBottom: `var(--space-3)`
+               }}
+            />
+          </div>
+
         </div>
       </div>
     </div>
@@ -169,7 +175,7 @@ const IndexPage = () => (
             </p>
           </div>
           <div >
-            <video autoPlay loop width={850}>
+            <video autoPlay loop width={750} className={styles.video}>
               <source src={webapp} type="video/mp4" />
             </video>
 
@@ -193,7 +199,7 @@ const IndexPage = () => (
             <StaticImage
               src="../images/ivmet.png"
               loading="eager"
-              width={1000}
+              width={3250}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt=""
