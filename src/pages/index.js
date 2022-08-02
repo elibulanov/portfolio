@@ -117,6 +117,49 @@ const IndexPage = () => (
       </div>
     </div>
 
+    <div className={styles.textCenter} >
+      <p className={styles.skills}>
+        <h2>Skills</h2>
+        <StaticImage
+          src="../images/javascript.png"
+          loading="eager"
+          width={45}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)`, marginRight: `var(--space-3)` }}
+        />
+        <StaticImage
+          src="../images/typescript.png"
+          loading="eager"
+          width={45}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)`, marginRight: `var(--space-3)` }}
+        />
+        <StaticImage
+          src="../images/react.png"
+          loading="eager"
+          width={50}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)`, marginRight: `var(--space-3)` }}
+        />
+        <StaticImage
+          src="../images/mongodb.png"
+          loading="eager"
+          width={185}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt=""
+          style={{ marginBottom: `var(--space-3)`, marginRight: `var(--space-3)` }}
+        />
+      </p>
+      
+    </div>
+
     {/* project section */}
 
     <div className={styles.textCenter} id="projects">
@@ -177,7 +220,7 @@ const IndexPage = () => (
                 The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
             </p>
           </div>
-          <div className={styles.test}>
+          <div className={styles.ivmet}>
             <StaticImage
               src="../images/ivmet.png"
               loading="eager"

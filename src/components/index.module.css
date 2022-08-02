@@ -66,8 +66,9 @@ a:hover {
   text-underline-offset: 2px;
 }
 
-.test {
-  font: 100;
+.ivmet {
+  margin-left: -2rem;
+  padding-left: 2rem;
 }
 
 .list {
@@ -220,11 +221,14 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
   max-width: 23rem;
   margin: 0 auto;
   padding-top: 5rem;
-  text-align: start;
+  text-align: justify;
 }
 
+
+
 .textCenter {
-  padding-top: 10rem;
+  padding-top: 15rem;
+  padding-bottom: 0rem;
   text-align: center;
 }
 
@@ -249,6 +253,7 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
 
 .aboutContent2 {
   padding-top: 10rem;
+  
   display: flex;
   justify-content: space-between;
   margin-left: auto;
