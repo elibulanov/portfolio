@@ -277,11 +277,20 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
 .heroText {
   font-size: large;
   max-width: 350px;
-  padding-top: 15px;
+  padding-top: 5rem;
+  line-height: normal;
+}
+
+.heroText h3{
+  margin-top: -1rem;
+}
+
+.heroText h5{
+  font-weight: 200;
 }
 
 .aboutText p {
-  max-width: 23rem;
+  max-width: 27rem;
   margin: 0 auto;
   padding-top: 3rem;
   text-align: justify;

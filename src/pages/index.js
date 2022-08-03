@@ -30,13 +30,13 @@ const IndexPage = () => (
     <div className={styles.heroSection}>
       <div className={styles.heroText}>
         <h1>
-          <b>Hey, i'm Eli.</b>
+          Hey, i'm Eli,
         </h1>
         <h3>
-          I'm a self-taught Web Developer who is passionate about refining his craft
-          and a lifelong learner.
+          Web Developer.
 
         </h3>
+        <h5>Freelance / Front End / Mobile</h5>
       </div>
       <div className={styles.heroImg}>
         <StaticImage
@@ -69,7 +69,8 @@ const IndexPage = () => (
 
       </div>
       <p>
-        I became interested in coding when thinking of how to build a app that i could use and would be useful for skaters like me.
+        I became interested in coding when thinking of how to build a app that I could use and would be useful for skaters like me. 
+        This sparked my passion in Front End Web Development, I began learning as much as I could, and continue to do so.
 
       </p>
 
@@ -94,7 +95,7 @@ const IndexPage = () => (
       </div>
       <div className={styles.aboutContent2}>
         <p>
-          When not working on my apps, I’m skating or hitting the slopes! I've been rollerblading for 15 years and its been a sport that i love improving on, anywhere from competing, to street skating or at the skatepark.
+          When not working on my apps, Im skating or hitting the slopes! I've been rollerblading for 15 years and its been a sport that I am very passionate about, and always progressing, anywhere from competing, to street skating or at the skatepark.
           I put this same dicsipline into coding and am motivated to excell in whatever I learn.
         </p>
         <div>
@@ -196,10 +197,10 @@ const IndexPage = () => (
               Blade Mobile
             </a>
             <p className={styles.listItemDescription}>
-              <li>Mobile app that renders interactive skatepark.</li>
-              <li>React-Native navigation, expo and android studio.</li>
+              <li>Mobile app that renders interactive skatepark locations.</li>
+              <li>React-Native, expo and android studio.</li>
               <li>User authentication with a database.</li>
-              <li>Learned about state/props as well as redux.</li>
+              
             </p>
             <div className={styles.btn}>
               <a href="https://github.com/elibulanov/blade">
@@ -260,7 +261,7 @@ const IndexPage = () => (
             <p className={styles.listItemDescription}>
               <li>NodeJS project using MVC architecture and RESTful routing. </li>
               <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
-              <li>I learned express js to build a back-end for CRUD operations.</li>
+              <li>Express js to build a back-end for CRUD operations.</li>
             </p>
             <div className={styles.btn}>
               <a href="https://github.com/elibulanov/blade_webapp">
