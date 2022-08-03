@@ -202,12 +202,10 @@ const IndexPage = () => (
               <li>Learned about state/props as well as redux.</li>
             </p>
             <div className={styles.btn}>
-            <a href="https://github.com/elibulanov/blade">
-              <button className={styles.button}>
-                
+              <a href="https://github.com/elibulanov/blade">
+                <button className={styles.button}>
                   CODE
-                
-              </button>
+                </button>
               </a>
             </div>
           </div>
@@ -231,9 +229,11 @@ const IndexPage = () => (
                 The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
             </p>
             <div className={styles.btn}>
-              <button className={styles.button}>
-                CODE
-              </button>
+              <a href="https://github.com/elibulanov/IVMETstore">
+                <button className={styles.button}>
+                  CODE
+                </button>
+              </a>
             </div>
           </div>
           <div className={styles.ivmet}>
@@ -255,7 +255,7 @@ const IndexPage = () => (
               className={styles.listItemLink}
               href="https://github.com/elibulanov/blade"
             >
-              Blade Mobile
+              Blade Web App
             </a>
             <p className={styles.listItemDescription}>
               <li>NodeJS project using MVC architecture and RESTful routing. </li>
@@ -263,9 +263,11 @@ const IndexPage = () => (
               <li>I learned express js to build a back-end for CRUD operations.</li>
             </p>
             <div className={styles.btn}>
-              <button className={styles.button}>
-                CODE
-              </button>
+              <a href="https://github.com/elibulanov/blade_webapp">
+                <button className={styles.button}>
+                  CODE
+                </button>
+              </a>
             </div>
           </div>
           <div >
