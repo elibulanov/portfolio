@@ -58,6 +58,69 @@ a {
 
 }
 
+.btn {
+  padding: 0rem;
+  padding-top: 10px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button {
+  text-transform: uppercase;
+  float: left;
+  min-width: 100px;
+  max-width: 250px;
+  display: block;
+  padding: 1em 2em;
+  background: none;
+  
+  position: relative;
+  z-index: 1;
+  letter-spacing: 2px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.button::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  opacity: 0;
+  color: #3f51b5;
+  z-index: -1;
+}
+
+.button:hover::after {
+  opacity: 1;
+  background-color: #1ace98;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button,
+.button:after {
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.button:hover {
+  border: 1px solid #1ace98;
+}
+
+
 a:active,
 a:hover {
   outline-width: 0;
@@ -120,7 +183,7 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
   display: flex;
   flex-direction: row;
   padding-right: 10rem;
-  padding-left: 11rem;
+  padding-left: 7rem;
 }
 
 .listItem:nth-child(2) {
@@ -220,11 +283,13 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
 .aboutText p {
   max-width: 23rem;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: 3rem;
   text-align: justify;
 }
 
-
+.mobileVid {
+  padding-left: 8rem;
+}
 
 .textCenter {
   padding-top: 15rem;
@@ -253,7 +318,7 @@ header:nth-child(1)>div:nth-child(2)>a:nth-child(3) {
 
 .aboutContent2 {
   padding-top: 10rem;
-  
+
   display: flex;
   justify-content: space-between;
   margin-left: auto;
@@ -431,7 +496,11 @@ input {
     width: 100%;
     margin-left: -1rem;
   }
-  
+
+  .mobileVid {
+    max-width: 100%;
+    margin-left: -9rem;
+  }
 
   .video {
     width: 108%;
@@ -443,7 +512,7 @@ input {
     width: 100%;
     display: flex;
     max-width: 150%;
-    
+
     left: -1.5rem;
   }
 
@@ -465,6 +534,9 @@ input {
     padding-right: 0%;
   }
 
+  .btn {
+    padding-bottom: 6rem;
+  }
 
 
   .listItem {

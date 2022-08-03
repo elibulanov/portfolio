@@ -2,6 +2,7 @@ import * as React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 import webapp from "../images/webapp.webm"
+import mobile from "../images/blademobile.webm"
 import mobileGIF from "../images/mobileGif.gif"
 import ivmet from "../images/ivmet.png"
 import Layout from "../components/layout"
@@ -32,8 +33,9 @@ const IndexPage = () => (
           <b>Hey, i'm Eli.</b>
         </h1>
         <h3>
-          I'm a self-taught Web Developer based in Vancouver, WA.
-          I work with frontend frameworks such as React, React-Native, NextJS and Gatsby.
+          I'm a self-taught Web Developer who is passionate about refining his craft
+          and a lifelong learner.
+
         </h3>
       </div>
       <div className={styles.heroImg}>
@@ -67,36 +69,33 @@ const IndexPage = () => (
 
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Aspernatur temporibus impedit, optio aliquid esse quas odit!
-        Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
+        I became interested in coding when thinking of how to build a app that i could use and would be useful for skaters like me.
+
       </p>
 
       <div className={styles.aboutContent1}>
         <div className={styles.aboutImg}>
-        <StaticImage
-          src="../images/truckin.jpg"
-          loading="eager"
-          width={800}
-          quality={95}
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          style={{ marginBottom: `var(--space-3)` }}
-        />
+          <StaticImage
+            src="../images/truckin.jpg"
+            loading="eager"
+            width={800}
+            quality={95}
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            style={{ marginBottom: `var(--space-3)` }}
+          />
         </div>
-        
+
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Aspernatur temporibus impedit, optio aliquid esse quas odit!
-          Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
+          I currently work as a long haul truck driver. I love traveling and learning at the same time,
+          my job gives me a opportunity to learn about the tech industry as well as coding a few hours per day.
         </p>
 
       </div>
       <div className={styles.aboutContent2}>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Aspernatur temporibus impedit, optio aliquid esse quas odit!
-          Culpa excepturi illo dicta soluta dolor enim, eveniet corrupti id architecto consequuntur odit beatae!
+          When not working on my apps, I’m skating or hitting the slopes! I've been rollerblading for 15 years and its been a sport that i love improving on, anywhere from competing, to street skating or at the skatepark.
+          I put this same dicsipline into coding and am motivated to excell in whatever I learn.
         </p>
         <div>
           <div className={styles.aboutContentImg2}>
@@ -157,7 +156,7 @@ const IndexPage = () => (
           style={{ marginBottom: `var(--space-3)`, marginRight: `var(--space-3)` }}
         />
       </p>
-      
+
     </div>
 
     {/* project section */}
@@ -197,15 +196,27 @@ const IndexPage = () => (
               Blade Mobile
             </a>
             <p className={styles.listItemDescription}>
-              <li>Mobile app that renders interactive skatepark data on a map.</li>
+              <li>Mobile app that renders interactive skatepark.</li>
               <li>React-Native navigation, expo and android studio.</li>
               <li>User authentication with a database.</li>
               <li>Learned about state/props as well as redux.</li>
             </p>
+            <div className={styles.btn}>
+            <a href="https://github.com/elibulanov/blade">
+              <button className={styles.button}>
+                
+                  CODE
+                
+              </button>
+              </a>
+            </div>
           </div>
-          <div className={styles.image1}>
-            <img src={mobileGIF} width={300} alt="mobile" />
-          </div>
+
+          <video autoPlay loop width={350} className={styles.mobileVid}>
+            <source src={mobile} type="video/mp4" />
+          </video>
+
+
         </li>
         <li className={styles.listItem}>
           <div className={styles.projectText}>
@@ -219,6 +230,11 @@ const IndexPage = () => (
               <li>A website for a small Amazon business. I learned about SSR and SSG while building a marketing website for my client.
                 The goal was to create a site that was fast, optimized and mobile responsive including a blog feature.</li>
             </p>
+            <div className={styles.btn}>
+              <button className={styles.button}>
+                CODE
+              </button>
+            </div>
           </div>
           <div className={styles.ivmet}>
             <StaticImage
@@ -246,6 +262,11 @@ const IndexPage = () => (
               <li>Renders skatepark, with user authentication sharing a database with the mobile app.</li>
               <li>I learned express js to build a back-end for CRUD operations.</li>
             </p>
+            <div className={styles.btn}>
+              <button className={styles.button}>
+                CODE
+              </button>
+            </div>
           </div>
           <div >
             <video autoPlay loop width={750} className={styles.video}>
@@ -255,7 +276,7 @@ const IndexPage = () => (
           </div>
 
         </li>
-        
+
       </ul>
 
       <div className={styles.contactSection} id="contact">

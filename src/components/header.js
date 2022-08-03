@@ -13,6 +13,7 @@ const Header = ({ siteTitle }) => (
       alignItems: `center`,
       justifyContent: `space-between`,
       maxWidth: `850px`
+      
     }}
   >
     <Link
@@ -32,7 +33,7 @@ const Header = ({ siteTitle }) => (
       padding: `var(--space-4) var(--size-gutter)`,
       display: `flex`,
       justifyContent: `space-evenly`,
-      
+      cursor: `pointer`
     }}>
     
     <Link to="projects" spy={true} smooth={true} offset={150} duration={700}>
